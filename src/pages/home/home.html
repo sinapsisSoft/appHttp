@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <h1>DATA SERVER <a href="https://jsonplaceholder.typicode.com/" target="_blank">
+  https://jsonplaceholder.typicode.com/</a></h1>
+ <ion-list no-lines>
+  <button ion-item *ngFor="let user of users">
+    {{ user.id }} - {{ user.name }}
+  </button> 
+</ion-list>
+</ion-content>
